@@ -1,0 +1,29 @@
+{% load static %}
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>login page</title>
+
+  <link  type="text/css" href="{% static 'css/style.css' %}"rel="stylesheet">
+</head>
+<body>
+<div class="loginpage">
+<div class="container">
+  <div class="left-section">
+    <div class="header">
+      <h1>Welcome TO SBI Login Page</h1>
+
+    </div>
+    <form method="POST" class="form">
+      {% csrf_token %}
+      <input type="text" class=""name="uname" placeholder="Username"><br><br>
+      <input type="password" class=""name="pwd"placeholder="Password"><br><br>
+       <button type="submit" class=""value="sumbit">login</button>
+    </form>
+    </div>
+  </div>
+  <div class="right-section"></div>
+</div>
+</div>
+</body>
+</html>

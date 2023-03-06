@@ -1,0 +1,37 @@
+{% load static %}
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>signup</title>
+
+  <link  type="text/css" href="{% static 'css/style.css' %}"rel="stylesheet">
+</head>
+<body>
+<div class="loginpage">
+<div class="container">
+  <div class="left-section">
+    <div class="header">
+      <h1 >Welcome TO SBI REGISTRATION</h1>
+
+    </div>
+
+
+
+        <form method= "POST" class="form ">
+          {% csrf_token %}
+         <input type="text" class=""name="phn"placeholder="Phone number"><br><br>
+         <input type="text" class=""name="uname" placeholder="Username"><br><br>
+         <input type="text" class=""name="pwd" placeholder="Password"><br><br>
+         <input type="text" class=""name="address" placeholder="Confirm Password"><br><br>
+         <button type="submit" class=""value="signup">SUBMIT</button>
+        </form>
+        </form>
+    </div>
+
+  </div>
+  <div class="right-section"></div>
+</div>
+</div>
+</body>
+
+</html>

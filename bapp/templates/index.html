@@ -1,0 +1,78 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SBI</title>
+
+<!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link  type="text/css" href="{% static 'css/style.css' %}"rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="{% static 'script.js' %}"></script>
+</head>
+
+<body style="background-image: url('{%static 'media/indian.jpg'%}');">
+<section>
+<div id="header">
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">SBI</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">LOGIN</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">SIGNUP</a>
+      </li>
+      <li class="nav-item dropdown">
+       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">kannur</a></li>
+      <li><a href="#">ernakulam</a></li>
+      <li><a href="#">Idukki</a></li>
+        <li><a href="#">palakkad</a></li>
+        <li><a href="#">Kozhikkod</a></li>
+    </ul>
+      </li>
+
+</ul>
+  </div>
+    </div>
+</div>
+</section>
+
+
+
+<section>
+   <div class="container-fluid">
+   <div id="home">
+
+
+    <h2 style="font-size:30px">WELCOME TO SBI</h2>
+    <br>
+    <br>
+    <button class="button1"><span><a href=" login"> login </a></span></button>
+    <button class="button2"><span><a href="signup">signup</a> </span></button>
+    <br>
+    <br>
+    <br>
+  </div>
+   </div>
+   </div>
+</section>
+</body>
+       </html>
